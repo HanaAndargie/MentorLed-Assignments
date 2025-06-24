@@ -1,0 +1,7 @@
+# Get all quotes
+curl http://localhost:3000/quotes
+
+# Add a new quote
+curl -X POST http://localhost:3000/quotes \
+  -H "Content-Type: application/json" \
+  -d '{"author": "Ada Lovelace", "quote": "That brain of mine is something more than merely mortal, as time will show."}'
